@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>hotdog</title>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+  </head>
+  <body>
+    <script
+      type="module"
+      src="dist/main.js"></script>
+    <div class="game-wrapper">
+      <div class="info-wrapper">
+        <div>
+          <div class="score-key">### Hotdogs Eaten:</div>
+          <div
+            id="totalHotdogsEaten"
+            class="score-val">
+            0
+          </div>
+        </div>
+        <div>
+          <div class="score-key">### Stomach Capacity:</div>
+          <div class="score-val">
+            <!-- <button id="btnUpgradeStomach">Upgrade</button> -->
+            <div id="stomachCapacity">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="button-wrapper">
+          <button id="btnEatHotdog">Eat Hotdog</button>
+          <button id="btnDrinkWater">Drink Water</button>
+        </div>
+        <div class="water-wrapper">
+          <progress
+            id="waterCapacity"
+            value="100"
+            max="100"></progress>
+        </div>
+      </div>
+
+      <!-- <button id="reset">Reset Score</button> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --padding: 4px;
+  --spacing: 8px;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  .info-wrapper > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--spacing);
+    .score-key {
+      margin-right: var(--spacing);
+    }
+    .score-val {
+      display: flex;
+      align-items: center;
+      button {
+        margin-right: var(--spacing);
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-wrapper {
+    display: flex;
+    gap: var(--spacing);
+    justify-content: flex-start;
+    margin: var(--spacing);
+  }
+
+  #waterCapacity {
+    width: 100%;
+  }
+
+  #score {
+    margin-bottom: var(--spacing);
+  }
+
+  #click {
+    padding: calc(var(--padding) * 2);
+    margin-left: var(--spacing);
+  }
+}
